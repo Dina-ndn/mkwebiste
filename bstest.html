@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+/* Style Snowballs and Snowflakes */
+  
+.snow-ball-container .snow-ball { 
+    position: absolute; 
+    height: 10px; 
+    width: 10px; 
+    border-radius: 50%; 
+    background: white; 
+  
+} 
+  
+.snow-ball-container .snow-ball:nth-child(even) { 
+    position: absolute; 
+    width: 16px; 
+    height: 16px; 
+    animation: flake-motion 15s linear infinite; 
+} 
+  
+/* Position the Snowballs above the screen */
+  
+.snow-ball-container .snow-ball:nth-child(1) { 
+    top: -50%; 
+    left: 5%; 
+    width: 20px; 
+    height: 20px; 
+    animation: snowball-animation 12s linear 2s infinite; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(2) { 
+    top: -20%; 
+    left: 10%; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(3) { 
+    top: -50%; 
+    left: 15%; 
+    animation: snowball-animation 12s linear infinite; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(4) { 
+    top: -10%; 
+    left: 20%; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(5) { 
+    top: -20%; 
+    left: 25%; 
+    width: 20px; 
+    height: 20px; 
+    animation: snowball-animation 12s linear 2s infinite; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(6) { 
+    top: -40%; 
+    left: 30%; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(7) { 
+    top: -30%; 
+    left: 35%; 
+    width: 5px; 
+    height: 5px; 
+    animation: snowball-animation 12s linear infinite; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(8) { 
+    top: -20%; 
+    left: 40%; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(9) { 
+    top: -50%; 
+    left: 45%; 
+    width: 5px; 
+    height: 5px; 
+    animation: snowball-animation 12s linear 2s infinite; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(10) { 
+    top: -5%; 
+    left: 50%; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(11) { 
+    top: -20%; 
+    left: 60%; 
+    animation: snowball-animation 12s linear infinite; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(12) { 
+    top: -10%; 
+    left: 70%; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(13) { 
+    top: -50%; 
+    left: 80%; 
+    width: 5px; 
+    height: 5px; 
+    animation: snowball-animation 12s linear 2s infinite; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(14) { 
+    top: -20%; 
+    left: 90%; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(15) { 
+    top: -50%; 
+    left: 95%; 
+    width: 30px; 
+    height: 30px; 
+    animation: snowball-animation 12s linear infinite; 
+} 
+  
+/* Define animations of Snowball and Snowflakes */
+  
+@keyframes snowball-animation { 
+    0% { 
+        transform: translate(0); 
+        opacity: 1; 
+    } 
+  
+    20% { 
+        transform: translate(4px, 100px); 
+        opacity: 0.8; 
+    } 
+  
+    40% { 
+        transform: translate(-7px, 200px); 
+        opacity: 0.7; 
+    } 
+  
+    60% { 
+        transform: translate(10px, 400px); 
+        opacity: 0.5; 
+    } 
+  
+    80% { 
+        transform: translate(-14px, 700px); 
+        opacity: 0.2; 
+    } 
+  
+    100% { 
+        transform: translate(16px, 900px); 
+        opacity: 0; 
+    } 
+} 
+  
+@keyframes flake-motion { 
+    0% { 
+        transform: translate(-2px, 0); 
+        opacity: 1; 
+    } 
+  
+    20% { 
+        transform: translate(-9px, 200px); 
+        opacity: 0.9; 
+    } 
+  
+    40% { 
+        transform: translate(14px, 300px); 
+        opacity: 0.7; 
+    } 
+  
+    60% { 
+        transform: translate(-22px, 400px); 
+        opacity: 0.6; 
+    } 
+  
+    80% { 
+        transform: translate(30px, 600px); 
+        opacity: 0.5; 
+    } 
+  
+    90% { 
+        transform: translate(-40px 800px); 
+        opacity: 0.3; 
+    } 
+  
+    100% { 
+        transform: translate(52px, 1000px); 
+        opacity: 0; 
+    } 
+    
+}
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlQMBEQACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAAAgEEBQYHAwj/xAA3EAABAwMBBgMGBQMFAAAAAAABAAIDBAUREgYhMUFRYRMicRQygZGhsQcVI0JSosHRFjNDYsL/xAAaAQEAAgMBAAAAAAAAAAAAAAAABAUBAgMG/8QALREBAAICAQMCBAUFAQAAAAAAAAECAxEEEiExBUEiMlFxE2GBkdEjQlKhsST/2gAMAwEAAhEDEQA/AO4DgEDCBhAwgYQMIGEDCBhAwgYQMIGEDCBhAwgYQMIIv5IJN4BBVAQEBAQEBAQEBAQEBAQEBAQQk5IJN4BBVAQEBAQEBAQEBAQEBAQEBAQQk5IJN4BBVAQEBAQEBAQEFMjqgta640VAzXW1cFO3rLIG/db0x3yTqkbb0xXyTqkbY2Pa2zTSGOmq3VDx+2nhfIf6QV2niZqxu0a+/Z2niZqxu0a+/Zl6ecTs1tbI0HlIwtPyKjzEwjzGnssMCAgIISckEm8AgqgICAgICAgILauraegppKislZDCweZ7zgLalLXt01jctqUte3TWNy5ltF+IVXVSGnsrXU8btwk05ld6cmq5xen4sNevkT/C5w+n48epy95+jCUVA6eb2i5PdUSHiHuLs+pO8qs5vrVo+DjRqPssunUa8fZuVoqq5jfBoRpY3/jghbgfABeeycrlZLb3MygZsGCO9/8Actloq25DAqaRzm9QzSVvj5XKrPx03+iuy4cH9lmXif4jQ7S5vZwwVZ0v1xvSHMalNbsCAghJyQSbwCCqAgICCjnNaMucAOpKxMxHk1tFkkb/AHHtd6HKRaJ8SzMTHlNZYWN3udLaaCStrZhHDGPi48gBzJW+PHbJbpr5bUpN51DiG1u1dXfazXISyEH9CnB3MHU9SvRYMGPi0/P3lbYunBHTTvaWNoZxB5hvld7ziMkdlT8zPPItrfZdcfBGOvVfzLL01W0nzuf8lV3wTMdnW0Qz1qqo3TMEU/hScnOdo+qhZOLn81Q88R0/FG4dCttXWsDY7hC/HKXH3wtsPJzUnozVn7vP5sWKfixT+jLtxjcrGJ33RFVkEBBCTkgk3gEFUBAQUdwQaHebo6tq5PN+i1xDG8sdVRcm9st534X/ABePGPHE+8rFlU+NwdE9zHDm0kFca1mvy9km2OLRq0bZmi2t9lY78zdqhaMmUcWjv1+6s+LnyXvGOY3Mq3k8CsR1UnTme2u1kt+rvF3spISRTwk/1HufpwXsuNx68en5yhVvGKu/dq0E8fikyyDX3Ufm2yWjpr7+Vj6b0df4mSe/svmSfuaWkfNVMxMeYegiYtHZeU9SR7zMjsUYmrZrLbZ7rE40PhySMHnh1APA64O4j0KbQ8/IrgnWTtH19m2WG7VlnkZR3SOVtOTgeIDmP0PMJMRKt5PGx8iOvDPf/reWODmgtIIIyCOa5qTUxOpSQEBBCTkgk3gEFUBAQY+9QVdTR+z0MgifI8NfIf2N35P9vitMlZtGodsF6Uv1XjemgbWbKz2qhdXw1T6iJmPGDhgt/wC3oo88b/FccX1GMlui8aai26y03mMnk6PO5a1405J1WO6xyXx469V51DGXe9vryGj9Onb+3PE9SvSen+n14kdU/NLzPL9Q/GnVflYCWYzSdhwU+Z3Kvvl2tpmPhd4jDuPH1Wl6rLiZZtXot5ZS0h1YyV0cZJhbqkxvw3OM+mceii5Ir7rCmTU63ptezVro7pUihqJ3008v+xN7zdX8XDvyII+yhZsURG4Sbc3Lijq1uIZmp2evezdS2rY04iOW1MB1NHqOI+O5RXfHy+Ny6fh29/aXSLFc4L9a2SujYXe7LEd4Dv8AHNY8PO8nj34uXp/ZkqaCOmjEULdLBwbyHYLDha02ncvZGogIISckEm8AgqgICAg8KylirKWamqGh8MzHMe08C0jBCzE6ncMTG+z5q2mts+zl6ntlWHkxnVE/ORJESdLh64+eV6DBnrenVEIGSuSJ1M7hhnzOmOAPL0HNbWv23LekWtMVjyvKakdpJeN62rMSg5723M/Tt+q5qaURM/UaXxubqwOJHMLOK8ZeqseYekwYLfhUyf5Q2TZq1zbLfiHSU8jtUT5A1riN0sMow0/UfEKtyXjJilJn48My3fanYz2R7rhZmFsYOp8DOMZ/k3t25KLizbjpscbldXwZG62Ss/MrTTVRxqkZ58fyG4/UFR7R02mEHLTovNVae001LXPqqVvgukGJWMGGv6HHXv3WG18970il53rwv1hxEBAQQk5IJN4BBVAQEBAQYLavZW17U0Taa5xHUw5injOHxnsenY7iumPLbHO6sTWs+Y25TePwuvNrLn21jK+HrGdMgHdpP2K2yZ75PmlecDkcHD8temf3/wBtancaaalhmjfFM3LZo3t0uac43g+mV3x8nVqfki5PSq5MfKtXvFp3X/qjKkSzSU8mCA8+GeuOS6YeRFOTNvaZXHE4v/hx47eYiHTbJQ/n9isddjNZa6tsEh5mLUPsNJ+aj2ydN7R7SrOXWOPmtX2tG3SwoypeFHSRUjXsgbpY55fpHAE8cfdZmdtrWm07lcLDUQEBAQQk5IJN4BBVAQEBAQEAoMFtXZrLcrZNJfYY/BgYXmf3Xxgcw7+yzETM6h1xcnJx56qzp84TaYqhz6fX4TXnwy/3tOd2e+FIzYL4dTL0PpvqmLm11Ha0ezs34PT+JTXKMHdqjkHxB/wuN/ZH9drHVS35S6MtFCICAgICAghJyQSbwCCqAgICAgIPOeeKnifLPI2ONg1Oe44ACzETM6hibRWNy5XtfdrjtiZKOzRObaKfzzVMnlY7H7nHoOQ4q0wYq8fVr/NPsqs2a2ftj+WPdzz2IyMeQ0lnu69O7KnZaVyUmko/E5d+NnrlrPiXU/wWgc22107hucY4wfQE/wDpeft27Pc+s5It+HEfTf7ukLRSCAgICAgIISckEm8AgqgICAgICCxrrVSV72mtYZ2N3tiecsz108CfXK3rktT5XO+Kt5+Lu1++UdTfw2023FLa2Ee0VAbgPx+xg5+vDKkYbVw/1Ld7e0fyiZq2z/06dq+8/wAMbcLBRe101up4dNrtUZqKp3OR5GcE83EAfA+i7U5Fq47ZLT8Vu0OU8WMuamCsfDXz9/o2PYy0mz2KCnkbpmfmWUdHOOcfDcPgq+07lfczNGbNNo8R2j9GdWEUQEBAQEBBCTkgk3gEFUBAQUyEDIQMhAyCgphoGAAB2QeEdLCyNzAwEOfrdneXHOcnqszMz5a0rFPC43dlhsZCBkIGQgqgICAghJyQSbwCCqAgIMFZa2pqLztBBNIXx0tVGyFuPdaYWOI+ZKDW3V94/wBMy7VtvUgkbqkbbvDj9n0h+PCPl168bs6ve5ckFhUbQ3H81rY4LpdTXfmjqaioRRsNLIBpOgyFnHTqJ8+QBwQXthrrxX3ipknqr+6GO61EIEUVN7KI2TOaASR4mAAATxQYx+0W17dkJ9OHVDqSWvju5jGiKFoJLCOBkBAaORBzyIQbxcKydlDTyNle0uo3yOLW7y79PfjrvKA91W5720D6t8egajOzQ4HWNzC9o3lurju3Dgg9IZ3Mq6eES1Ic6YB8dQG5DTHIRgjiCW9TwQUr6msFxbFSycJG4YcYePDe4tzyzgb/AEQelFV1FTc2Pd4kdNLC8xxPbpd5SzzOB3g5cd3QDqgy6AgICCEnJBJvAIKoCAgw9Rs1aKiufXS0YNS9zXukEjhqIwASAccggidlrI6s9rNti8XxvHxv0GXOdejOnVnfnGcoLiWyW2WCaCSjjdHNUe0vBzvlyDrB5HIG8dEFtHspZIq410dvY2pMxnMge7JkJ1F3HGckoL0WqiFpdavZm+wuidCYMnBYdxH1Qer6KB7GMfEC1jPDaM8G7t30HyQelRBHUxGOZmppOeOCCOBBHAoPD8tpix7XRudrILnPkcXbuHmJyMb8YQSioYIi1zI/M15fqc4lxcRjJJ3nccIPUxNMzZdPna0tB6AkE/YIPVAQEBBCTkgk3gEFUBAQEBAQEBAQEBAQEBAQEBBCTkgk3gEFUBAQEBAQEBAQEBAQEBAQEBBCTkgoHnA4IK6z2QNZ7IGs9kDWeyBrPZA1nsgaz2QNZ7IGs9kDWeyBrPZA1nsgaz2QNZ7IGs9kDWeyBrPZBCR53cEH/9k="
+    width="30px" height="30px" style="margin-left: 100px;">
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small" style="margin-right: 50px;">
+      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="https://z0jjlr.webwave.dev/files/dynamicContent/sites/z0jjlr/images/en/webpage_12/lqhhyfjv/element_280/rwdMode_1/2400x905/Header_Home.webp" alt="Architecture" width="1500" height="800">
+
+  <div class="w3-display-middle w3-margin-top w3-center">
+    
+    <p style="margin-right: 0px;" > Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quas ab reiciendis rerum vero non distinctio facere nesciunt atque consequatur facilis blanditiis, at veritatis corrupti sint quae quibusdam accusantium tempora.</p>
+    <h1 style="font-family: Arial, Helvetica, sans-serif; width: 100px; height: auto; color: rgb(61, 114, 8); font-size: xx-large; float: right;"> My lifestyle blog</h1>
+  </div>
+</header>
+
+<div class="snow-ball-container"> 
+    <div class="snow-ball"></div> 
+    <div class="snow-ball"></div> 
+    <div class="snow-ball"></div> 
+    <div class="snow-ball"></div> 
+    <div class="snow-ball"></div> 
+    <div class="snow-ball"></div> 
+    <div class="snow-ball"></div> 
+    <div class="snow-ball"></div> 
+    <div class="snow-ball"></div> 
+    <div class="snow-ball"></div> 
+    <div class="snow-ball"></div> 
+    <div class="snow-ball"></div> 
+    <div class="snow-ball"></div> 
+    <div class="snow-ball"></div> 
+    <div class="snow-ball"></div> 
+</div> 
+
+<section style="width: 100%; height: 700px;">
+<div class="row">
+    <div class="column" style="margin-left: 100px; float: left; width: 20%;">
+       <h2 style="color:chartreuse; padding-bottom: 20px;">What is this blog about?</h2>
+            <p style="line-height: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nobis architecto consectetur amet quos suscipit ea culpa, fugit laboriosam eaque dignissimos est enim, quod autem repudiandae, saepe repellendus eos? Officiis?
+             quae possimus alias soluta rerum deserunt expedita tenetur repudiandae laborum sunt, magnam sequi tempora animi impedit libero asperiores distinctio deleniti quidem!
+            </p>
+    
+    </div>
+    <div class="column" style="float: left; width: 20%;">
+    </div>
+    <div class="column" style="float: left; width: 20%;">
+       
+            <img src="https://z0jjlr.webwave.dev/files/dynamicContent/sites/z0jjlr/images/en/webpage_12/lqhhyfjv/element_282/rwdMode_1/405x455/Woman_2.webp">
+     
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px; margin-left: 30px;">
+    <div class="card" style="width: 18rem;">
+        <img src="https://z0jjlr.webwave.dev/files/dynamicContent/sites/z0jjlr/images/en/webpage_12/lqhhyfjv/element_289/rwdMode_1/270x350/Main_Interiors.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+</div>
+<div class="card">
+    <div class="card-header">
+      Featured
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+      <h3>John Doe</h3>
+      <p class="w3-opacity">CEO & Founder</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+      <h3>Jane Doe</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+      <h3>Mike Ross</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
+      <h3>Dan Star</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Lets get in touch and talk about your next project.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+  
+<!-- Image of location/map -->
+<div class="w3-container">
+  <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+</div>
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif
+        }
+
+        .w3-bar,
+        h1,
+        button {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .fa-anchor,
+        .fa-coffee {
+            font-size: 200px
+        }
+
+        .nav-item {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .phone {
+            text-align: center;
+            border-right-style: solid;
+            font-size: medium;
+            letter-spacing: 2px;
+            float: left;
+            padding: 10px 10px;
+            word-spacing: 10px;
+
+        }
+
+        .mail {
+            text-align: center;
+            padding: 10px 10px;
+            font-size: medium;
+            float: left;
+            letter-spacing: 2px;
+            word-spacing: 10px;
+
+        }
+
+        .sns {
+            float: right;
+
+        }
+
+        .fa {
+            padding-right: 60px;
+            padding-top: 20px;
+            font-size: 30px;
+
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+        }
+
+        /* .fa-facebook {
+            background: #3B5998;
+            color: white;
+        } */
+
+        /* Twitter */
+        /* .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        } */
+
+        .titlebar {
+            background-color: aliceblue;
+            ;
+            height: 60px;
+            width: 100%;
+            text-align: center;
+
+        }
+
+        #card-body {
+            border-left: dashed;
+            border-top: dashed;
+            border-bottom: dashed;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100px;
+            height: 100px;
+            float: left;
+            padding-left: 10px;
+        }
+
+        .product-card {
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        /* Create two equal columns that sits next to each other */
+        .column {
+            flex: 50%;
+            padding: 10px 60px;
+            text-align: center;
+        }
+
+        .button {
+            background-color: transparent;
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .snow-ball-container .snow-ball { 
+    position: absolute; 
+    height: 10px; 
+    width: 10px; 
+    border-radius: 50%; 
+    background: white; 
+  
+} 
+  
+.snow-ball-container .snow-ball:nth-child(even) { 
+    position: absolute; 
+    width: 16px; 
+    height: 16px; 
+    animation: flake-motion 15s linear infinite; 
+} 
+  
+/* Position the Snowballs above the screen */
+  
+.snow-ball-container .snow-ball:nth-child(1) { 
+    top: -50%; 
+    left: 5%; 
+    width: 20px; 
+    height: 20px; 
+    animation: snowball-animation 12s linear 2s infinite; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(2) { 
+    top: -20%; 
+    left: 10%; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(3) { 
+    top: -50%; 
+    left: 15%; 
+    animation: snowball-animation 12s linear infinite; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(4) { 
+    top: -10%; 
+    left: 20%; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(5) { 
+    top: -20%; 
+    left: 25%; 
+    width: 20px; 
+    height: 20px; 
+    animation: snowball-animation 12s linear 2s infinite; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(6) { 
+    top: -40%; 
+    left: 30%; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(7) { 
+    top: -30%; 
+    left: 35%; 
+    width: 5px; 
+    height: 5px; 
+    animation: snowball-animation 12s linear infinite; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(8) { 
+    top: -20%; 
+    left: 40%; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(9) { 
+    top: -50%; 
+    left: 45%; 
+    width: 5px; 
+    height: 5px; 
+    animation: snowball-animation 12s linear 2s infinite; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(10) { 
+    top: -5%; 
+    left: 50%; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(11) { 
+    top: -20%; 
+    left: 60%; 
+    animation: snowball-animation 12s linear infinite; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(12) { 
+    top: -10%; 
+    left: 70%; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(13) { 
+    top: -50%; 
+    left: 80%; 
+    width: 5px; 
+    height: 5px; 
+    animation: snowball-animation 12s linear 2s infinite; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(14) { 
+    top: -20%; 
+    left: 90%; 
+} 
+  
+.snow-ball-container .snow-ball:nth-child(15) { 
+    top: -50%; 
+    left: 95%; 
+    width: 30px; 
+    height: 30px; 
+    animation: snowball-animation 12s linear infinite; 
+} 
+  
+/* Define animations of Snowball and Snowflakes */
+  
+@keyframes snowball-animation { 
+    0% { 
+        transform: translate(0); 
+        opacity: 1; 
+    } 
+  
+    20% { 
+        transform: translate(4px, 100px); 
+        opacity: 0.8; 
+    } 
+  
+    40% { 
+        transform: translate(-7px, 200px); 
+        opacity: 0.7; 
+    } 
+  
+    60% { 
+        transform: translate(10px, 400px); 
+        opacity: 0.5; 
+    } 
+  
+    80% { 
+        transform: translate(-14px, 700px); 
+        opacity: 0.2; 
+    } 
+  
+    100% { 
+        transform: translate(16px, 900px); 
+        opacity: 0; 
+    } 
+} 
+  
+@keyframes flake-motion { 
+    0% { 
+        transform: translate(-2px, 0); 
+        opacity: 1; 
+    } 
+  
+    20% { 
+        transform: translate(-9px, 200px); 
+        opacity: 0.9; 
+    } 
+  
+    40% { 
+        transform: translate(14px, 300px); 
+        opacity: 0.7; 
+    } 
+  
+    60% { 
+        transform: translate(-22px, 400px); 
+        opacity: 0.6; 
+    } 
+  
+    80% { 
+        transform: translate(30px, 600px); 
+        opacity: 0.5; 
+    } 
+  
+    90% { 
+        transform: translate(-40px 800px); 
+        opacity: 0.3; 
+    } 
+  
+    100% { 
+        transform: translate(52px, 1000px); 
+        opacity: 0; 
+    } 
+}
+
+       
+        </style>
+</head>
+
+<body>
+   
+    <!-- Navbar -->
+    <div class="titlebar">
+
+        <div class="phone">
+            <p>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path
+                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                </svg>
+
+                <b> CallUs: +959-123-456-789 </b>
+            </p>
+
+        </div>
+
+        <div class="mail">
+            <p>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-envelope-at" viewBox="0 0 16 16">
+                    <path
+                        d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z" />
+                    <path
+                        d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+                </svg>
+                <b> Email : contact@gmail.com </b>
+            </p>
+        </div>
+        <div class="sns">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-facebook"
+                viewBox="0 0 16 16">
+                <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-instagram"
+                viewBox="0 0 16 16">
+                <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-youtube"
+                viewBox="0 0 16 16">
+                <path
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408z" />
+            </svg> -->
+
+        </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top"
+        style="float: right; box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item" style="padding-right: 80px;">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item" style="padding-right: 80px;">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item" style="padding-right: 80px;">
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item" style="padding-right: 80px;">
+                    <a class="nav-link href=" #">Blog</a>
+                </li>
+                <li class="nav-item" style="padding-right: 80px;">
+                    <a class="nav-link href=" #">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top"
+        style=" box-shadow: 0 4px 0 0 rgba(0,0,0,.2);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://mdbootstrap.com/wp-content/uploads/2018/06/logo-mdb-jquery-small.webp" alt="Logo"
+                    style="width:40px;" class="rounded-pill">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="w3-container" style="padding:128px 16px; background-color: aliceblue; width: 100%;">
+        <div class="card" style="width: 40%; height: auto; float: left;">
+            <div class="card-body" id="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <h5 style="padding-left: 10px; font-family: Sofia, sans-serif; font-size:medium bold;">Special title
+                    treatment</h5>
+                <p class="card-text" style="padding-left: 10px;">With supporting text below as a natural lead-in to
+                    additional content.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit eos assumenda quia voluptate quis,
+                    commodi eveniet voluptates placeat reprehenderit inventore recusandae ad. Soluta praesentium
+                    voluptates magni cum, alias dolorum deleniti!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nesciunt magnam assumenda nemo
+                    dolorem. Aut, quibusdam natus ipsa ex, placeat eaque numquam, quae nisi iure fugit repellendus non
+                    quod quia?
+                </p>
+                <div class="snow-ball-container"> 
+                    <div class="snow-ball"></div> 
+                    <div class="snow-ball"></div> 
+                    <div class="snow-ball"></div> 
+                    <div class="snow-ball"></div> 
+                    <div class="snow-ball"></div> 
+                    <div class="snow-ball"></div> 
+                    <div class="snow-ball"></div> 
+                    <div class="snow-ball"></div> 
+                    <div class="snow-ball"></div> 
+                    <div class="snow-ball"></div> 
+                    <div class="snow-ball"></div> 
+                    <div class="snow-ball"></div> 
+                    <div class="snow-ball"></div> 
+                    <div class="snow-ball"></div> 
+                    <div class="snow-ball"></div> 
+                </div> 
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOi_KpdevnUVpzcLzmVlDAho3zXW7RSYCAJvBruhreVepRUwiy">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOi_KpdevnUVpzcLzmVlDAho3zXW7RSYCAJvBruhreVepRUwiy">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOi_KpdevnUVpzcLzmVlDAho3zXW7RSYCAJvBruhreVepRUwiy">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOi_KpdevnUVpzcLzmVlDAho3zXW7RSYCAJvBruhreVepRUwiy">
+
+
+
+            </div>
+
+        </div>
+        <div class="card-right" style="width: 40%; height: auto; float: left; padding-left: 10%;">
+            <img
+                src="https://www.simplyrecipes.com/thmb/yW-CQhWbHcWr1vxtZ8qc4ewuy4o=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2020__04__Easy-Homemade-Horchata-LEAD-3-c861393234fa461d9bd14de39513ef74.jpg">
+        </div>
+    </header>
+
+
+    <!-- Second Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" style="width: 100%;">
+        <div class="card-left-image" style="width: 50%; float: left;">
+            <img src="https://media.istockphoto.com/id/1307546222/photo/mojito-cocktail-with-lime-and-mint.jpg?s=2048x2048&w=is&k=20&c=NtZQ17iP8-SdTqc36kVBawjFeUCDHgb2bAWQ1MSj0KM="
+                class="img-fluid rounded-start" alt="..." width="600px">
+        </div>
+        <div class="card-right-text" style="width: 40%; float: left;">
+            <h5 class="card-title" style="padding-left: 10px; font-family: Sofia, sans-serif; font-size:large bold;">
+                About Us</h5>
+            <h5 class="card-title"
+                style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;">
+                Special title treatment</h5>
+            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, minima error. Officiis
+                tempore odio similique maxime praesentium? Eligendi a natus consectetur assumenda maxime veniam, neque
+                repellat? Quod ipsum placeat ab?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus odit voluptates culpa esse facere
+                amet voluptatem eveniet! Quas, atque aliquam facere aperiam doloremque deserunt cupiditate non harum
+                error distinctio illo!This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <a href="#" class="btn btn-light" style="float: right;">More About Us</a>
+        </div>
+
+
+    </div>
+
+    <!-- First Grid -->
+    <div class="product-card" style="text-align: center; padding: 30px;">
+        <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-weight: bolder;"> Our Product
+        </h1>
+        <div class="link-product" style="text-align: center; padding: 30px;">
+            <button class="button">Soju</button>
+            <button class="button">Soju</button>
+            <button class="button">Soju</button>
+
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column" style=" align-items: center; text-align: center;">
+            <div class="card mb-3" style="max-width: 540px;background-color:#aaa;">
+                <div class="row g-0" style="text-align: center; padding: 30px 30px;">
+                    <div class="col-md-4">
+                        <img src="https://media.istockphoto.com/id/1322414396/photo/mojito-cocktail-with-lime-and-mint.jpg?s=612x612&w=0&k=20&c=wZAk02zLukzef4SoMHNbMLPXc24oaUAengvt5jr4TRk="
+                            alt="..." style="border: dotted;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card mb-3" style="max-width: 540px;background-color:#aaa;">
+                <div class="row g-0" style="text-align: center; padding: 30px 30px;">
+                    <div class="col-md-4">
+                        <img src="https://media.istockphoto.com/id/1492375291/photo/classic-mojito-cocktail-in-tall-glasses-with-lime-and-mint.jpg?s=612x612&w=0&k=20&c=hfwgympjj2_o1uT5m0TLJKdNnnV13tIi-mExdcbW6cw="
+                            alt="..." style="border: dotted;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card mb-3" style="max-width: 540px;background-color:#aaa;">
+                <div class="row g-0" style="text-align: center; padding: 30px 30px;">
+                    <div class="col-md-4">
+                        <img src="https://media.istockphoto.com/id/1322414396/photo/mojito-cocktail-with-lime-and-mint.jpg?s=612x612&w=0&k=20&c=wZAk02zLukzef4SoMHNbMLPXc24oaUAengvt5jr4TRk="
+                            class="img-fluid rounded-start" alt="..." style="border: dotted;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card mb-3" style="max-width: 540px;background-color:#aaa;">
+                <div class="row g-0" style="text-align: center; padding: 30px 30px;">
+                    <div class="col-md-4">
+                        <img src="https://media.istockphoto.com/id/1322414396/photo/mojito-cocktail-with-lime-and-mint.jpg?s=612x612&w=0&k=20&c=wZAk02zLukzef4SoMHNbMLPXc24oaUAengvt5jr4TRk="
+                            class="img-fluid rounded-start" alt="..." style="border: dotted;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- Second Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" style="width: 100%;">
+        <iframe width="100%" height="527"
+            src="https://www.youtube.com/embed/9cKsq14Kfsw?list=PL1MK7nFniZZYRV5sign661Pq--3DbF9Bn"
+            title="Responsive Bootstrap Website Start To Finish with Bootstrap 4, HTML5 &amp; CSS3" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+    </div>
+   
+
+
+
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity">
+        <div class="w3-xlarge w3-padding-32">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
